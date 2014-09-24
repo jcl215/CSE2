@@ -12,7 +12,7 @@ public class BigMac {
     
 //  add main method
     public static void main(String[] args) {
-            Scanner myScanner;
+            Scanner myScanner; //Scanner must be loaded in for program to recognize
             myScanner = new Scanner( System.in );
              System.out.print(
             "Enter the number of Big Macs(an integer > 0): ");
@@ -23,20 +23,14 @@ public class BigMac {
         	System.out.print(
             "Enter the percent tax as a whole number (xx): ");
             double taxRate = myScanner.nextDouble();
-            taxRate/=100; //user enters percent, but I want 
-            //proportion
+            taxRate/=100; //the user enters percent of tax 
             double cost$;
             int dollars,   //whole dollar amount of cost 
                   dimes, pennies; //for storing digits
-                      //to the right of the decimal point 
-                      //for the cost$ 
             cost$ = nBigMacs*bigMac$*(1+taxRate);
-            //get the whole amount, dropping decimal fraction
+            //You get the whole amount bydropping decimal fraction
             dollars=(int)cost$;
-            //get dimes amount, e.g., 
-            // (int)(6.73 * 10) % 10 -> 67 % 10 -> 7
-            //  where the % (mod) operator returns the remainder
-            //  after the division:   583%100 -> 83, 27%5 -> 2 
+            // % (mod) operator returns the remainder in dimes and pennies
             dimes=(int)(cost$*10)%10;
             pennies=(int)(cost$*100)%10;
             System.out.println("The total cost of " +nBigMacs
