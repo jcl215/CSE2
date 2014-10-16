@@ -3,7 +3,7 @@
 //CSE2
 //Boola Boola
 //
-//Compile then run the program BurgerKing.java
+//Compile then run the program BoolaBoola.java
 //
 import java.util.Random;
 import java.util.Scanner; //Scanner class import
